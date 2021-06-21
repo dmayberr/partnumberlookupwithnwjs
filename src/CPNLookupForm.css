@@ -1,11 +1,11 @@
 .header {
-    padding: 10;
-    display: flex;
+    padding-left: 15px;
+    width: 300px;
 }
 
 #logo-span {
     background-color: white;
-    padding: 5px;
+    padding-left: 15px;
 }
 
 #logo {

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./GPNLookupForm.css"
+import "./GPNLookupForm.css";
 import { cpnums } from "./cpnums.js";
 
 // Create LookupForm component to allow user to search for GPN from CPN

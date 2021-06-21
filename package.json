@@ -1,10 +1,13 @@
 {
   "name": "partnumberlookupdesktop",
   "version": "0.1.0",
-  "main": "./src/main.js",
+  "main": "./public/main.js",
   "private": true,
   "homepage": ".",
   "node-remote": "http://localhost:3000",
+  "build": {
+    "nwVersion": "0.54.0"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -21,7 +24,9 @@
     "eject": "react-scripts eject",
     "nwjs-dev": "concurrently \"set BROWSER=none&&yarn start\" \"wait-on http://localhost:3000 &&set NWJS_START_URL=http://localhost:3000&&nw .\" ",
     "nwjs-reactbuild": "nw .",
-    "prenwjs-reactbuild": "yarn build"
+    "prenwjs-reactbuild": "yarn build",
+    "nwjs-pack": "build --tasks win-x86,win-x64 --mirror https://dl.nwjs.io/ .",
+    "prenwjs-pack": "yarn build"
   },
   "eslintConfig": {
     "extends": [
@@ -43,6 +48,7 @@
   },
   "devDependencies": {
     "concurrently": "^6.2.0",
+    "nwjs-builder-phoenix": "^1.15.0",
     "wait-on": "^5.3.0"
   }
 }
