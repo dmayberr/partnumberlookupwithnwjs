@@ -7,19 +7,30 @@ import "./PartNumberLookup.css";
 const PartNumberLookup = () => {
     
     return (
-        <div id="both-forms">            
-            <div className="container-md">
-                <div className="row justify-content-start">
-                    <div className="col-6">
-                        <span><GPNLookupForm  /></span>
-                    </div>
-                    <div className="col-6">
-                        <span><CPNLookupForm  /></span>
-                    </div>
-                </div>                    
+        <div className="container" id="both-forms">            
+            <div className="row">
+                <div className="col">
+                    <GPNLookupForm  />            
+                </div>
+                <div className="col">
+                    
+                </div>
+                <div className="col">
+                    <CPNLookupForm  />  
+                </div>
             </div>            
         </div>
     )
 }
 
 export default PartNumberLookup;
+
+
+                    // <GPNLookupForm  />
+                    
+
+                    
+                   
+                    //     
+                                   
+           
