@@ -24,13 +24,3 @@ const PartNumberLookup = () => {
 }
 
 export default PartNumberLookup;
-
-
-                    // <GPNLookupForm  />
-                    
-
-                    
-                   
-                    //     
-                                   
-           
